@@ -1,13 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/colorBlue300">
+
+    <Button
+        android:id="@+id/askButton"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/image_eightBall"
+        android:layout_alignRight="@+id/image_eightBall"
+        android:layout_below="@+id/image_eightBall"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/mybutton"
+        android:text="Ask"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/colorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBaseline="@+id/askButton"
+        android:layout_alignBottom="@+id/askButton"
+        android:layout_alignLeft="@+id/image_eightBall"
+        android:layout_alignStart="@+id/image_eightBall"
+        android:text="Change Color"
+        android:textColor="#333333"
+        android:background="@drawable/mysecondbutton"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:text="Make everyday decisions easier!"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"/>
+
+    <ImageView
+        android:id="@+id/image_eightBall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ball1"/>
 </RelativeLayout>
